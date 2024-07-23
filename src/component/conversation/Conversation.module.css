@@ -1,0 +1,95 @@
+.conversationContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.conversationContent {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+  padding: 10px; 
+}
+
+.userMessage {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aiMessage {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 70%;
+  margin-bottom: 10px;
+}
+
+.userMessage .message {
+  background-color: #d1e7dd;
+}
+
+.aiMessage .message {
+  background-color: #f8d7da;
+}
+
+.messageHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  gap: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.time {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.messageText {
+  word-wrap: break-word;
+}
+
+.inputContainer {
+  display: flex;
+  flex-wrap: wrap; 
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #f8f8f8;
+  gap: 10px;
+}
+
+.textField {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.Btn {
+  background-color: #d8c9f3 !important;
+  color: black !important;
+}
+
+
+@media (max-width: 600px) {
+  .inputContainer {
+    flex-direction: column;
+    gap: 5px; 
+  }
+
+  .textField {
+    margin-right: 0;
+  }
+  
+  .Btn {
+    width: 100%; 
+  }
+}

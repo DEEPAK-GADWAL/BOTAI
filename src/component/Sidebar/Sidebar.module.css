@@ -1,0 +1,71 @@
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  transition: width 0.3s;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide content overflow */
+}
+
+.sidebar.closed {
+  width: 0;
+  padding: 0; /* Ensure padding is removed */
+  overflow: hidden; /* Ensure no content overflow */
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  background-color: #d8c9f3;
+  height: 65px;
+  gap: 15px; /* Space between logo and "New Chat" button */
+  overflow: hidden; /* Hide any content overflow */
+}
+
+.newChat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow-y: auto; /* Enable vertical scrolling */
+  flex: 1; /* Take up available space */
+}
+.logo{
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.listItem {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #d8c9f3;
+  cursor: pointer;
+  margin: 10px;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space between text and delete button */
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.listItem:hover {
+  background-color: #d8c9f375;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+}

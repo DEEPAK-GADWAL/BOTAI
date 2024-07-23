@@ -1,0 +1,39 @@
+1. Using the Application
+   • Start a New Chat
+   • Click on the "New Chat" button in the sidebar to begin a new conversation.
+
+2. Interact with the AI
+   • Type your message in the input field and click "Ask" to get a response from the AI.
+   • Use the "Clear Chat" button to reset the conversation.
+
+3. Save and Manage Conversations
+   • Click "Save" to store the current conversation in the sidebar.
+   • The sidebar displays saved conversations. Click on any saved conversation to view it.
+
+4. Remove Conversations
+   • Click the delete icon next to any saved conversation in the sidebar to remove it from both the sidebar and localStorage.
+
+5. Technical Choices
+   • React: Chosen for its component-based architecture, which allows for modular development and reusability.
+   • Material-UI: Used for its pre-built components and styling solutions, which speed up the development process and ensure a consistent design.
+   • CSS Modules: Used for component-specific styles to avoid global style conflicts and enhance maintainability.
+   • localStorage: Utilized for persisting conversations between sessions. This approach provides a straightforward way to manage state without a backend.
+
+6. Design Choices
+   • Sidebar: Implemented as a collapsible component to maximize screen space while keeping saved conversations easily accessible.
+   • Responsive Layout: The application is designed to be responsive, ensuring a smooth user experience across various devices and screen sizes.
+   • Conversation Management: Users can save, view, and delete conversations, enhancing interaction flexibility and user control
+
+7. Trade-offs and Future Improvements
+   • Trade-offs
+   • State Management: The application uses localStorage for simplicity but lacks advanced state management features. A more robust solution (e.g., Redux or Context API) might be beneficial for larger-scale applications.
+   • Styling: While Material-UI provides a consistent look, some customizations may be limited compared to a fully custom CSS solution.
+
+8. Future Improvements
+   • Enhanced State Management: Implementing a state management library for better handling of global states and complex interactions.
+   • Backend Integration: Adding backend support to handle user accounts, more persistent data storage, and real-time chat functionality.
+   • UI/UX Enhancements: Improving the user interface and experience, such as adding animations and more interactive elements to enhance usability.
+
+9. What Was Left Out
+   • User Authentication: No user authentication is implemented. Adding this feature would allow personalized experiences and conversation history management.
+   • Advanced AI Features: The AI capabilities are basic and could be expanded with more advanced natural language processing or integrations.

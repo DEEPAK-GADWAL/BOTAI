@@ -1,0 +1,103 @@
+.mainContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #d8c9f349;
+}
+
+.appbarTitle {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.contentArea {
+  flex-grow: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.text1,
+.text2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textHead {
+  padding: 15px;
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 7px 1px #80808080;
+  cursor: pointer;
+}
+
+.textHead:hover {
+  transform: scaleY(0.9);
+  background-color: rgba(245, 245, 220, 0.37);
+}
+
+.AItext {
+  color: rgba(128, 128, 128, 0.767);
+}
+
+.messageBar {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center; 
+}
+
+.btnAsk,
+.btnSave,
+.btnClear {
+  background-color: #d8c9f3 !important;
+  color: black !important;
+  border: none;
+}
+
+.middleItem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 575vh;
+}
+
+.responseBox {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 7px 1px #80808080;
+  width: 100%;
+}
+
+@media (max-width:768px){
+  .textContainer {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
